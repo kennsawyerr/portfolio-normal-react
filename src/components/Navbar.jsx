@@ -23,8 +23,8 @@ function Navbar(){
             <div class="fixed">
               <ul>
                 <li>
-                  <a href="#" class="xui-btn xui-btn-primary">
-                    Get Started
+                  <a href="#" class="xui-btn xui-btn-primary" mailto="kensawyerr@gmail.com">
+                    Let's Talk
                   </a>
                 </li>
               </ul>

@@ -11,7 +11,7 @@ const Projects = () => {
               className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
             />
           </div>
-          <div className="">
+          <div className="xui-alert-info">
             <img
               src="/images/2.png"
               alt="Image 1"
