@@ -23,18 +23,10 @@ function App() {
       </div>
       <Projects/>
       <PlayGround/>
-      
+
     </>
   );
 }
 
 export default App;
 
-// video for S.Projects
-// video for Richard
-// teszwani design 
-// find design for Doxpass
-// find design images for Doxpass
-// put the pages on adobe After Effects.
-// make the video out of it
-// collect 90k first
