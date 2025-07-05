@@ -1,7 +1,7 @@
 const PlayGround = () => {
   return (
     <>
-      <div className="xui-container">
+      <div className="xui-container" style={{ overflow: "hidden" }}>
         <h1>Playground</h1>
 
         <h4>See some of my free time designs below</h4>
@@ -14,34 +14,52 @@ const PlayGround = () => {
             gap: "0.5rem",
           }}
         >
-          <div className="xui-mx-1">
-            <img
-              src="/images/4.png"
-              alt="Image 1"
-              className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
-            />
-          </div>
-          <div className="xui-mx-1">
-            <img
-              src="/images/3.png"
-              alt="Image 1"
-              className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
-            />
-          </div>
-          <div className="xui-mx-1">
-            <img
-              src="/images/2.png"
-              alt="Image 1"
-              className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
-            />
-          </div>
-          <div className="xui-mx-1">
-            <img
-              src="/images/1.png"
-              alt="Image 1"
-              className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
-            />
-          </div>
+          {[1, 2].map((set) => (
+            <div key={set} style={{ display: "flex", gap: "0.5rem" }}>
+              <div className="xui-mx-1">
+                <img
+                  src="/images/1.png"
+                  alt="Image 1"
+                  className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
+                />
+              </div>
+              <div className="xui-mx-1">
+                <img
+                  src="/images/2.png"
+                  alt="Image 1"
+                  className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
+                />
+              </div>
+              <div className="xui-mx-1">
+                <img
+                  src="/images/4.png"
+                  alt="Image 1"
+                  className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
+                />
+              </div>
+              <div className="xui-mx-1">
+                <img
+                  src="/images/3.png"
+                  alt="Image 1"
+                  className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
+                />
+              </div>
+              <div className="xui-mx-1">
+                <img
+                  src="/images/2.png"
+                  alt="Image 1"
+                  className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
+                />
+              </div>
+              <div className="xui-mx-1">
+                <img
+                  src="/images/1.png"
+                  alt="Image 1"
+                  className="xui-object-fit-contain  xui-h-fluid-100 xui-w-fluid-100"
+                />
+              </div>
+            </div>
+          ))}
         </section>
         <style>{`
           @keyframes slideRight {
